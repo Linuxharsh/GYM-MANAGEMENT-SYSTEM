@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Management System - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h2>Gym Management System</h2>
+
+  <div class="login-box">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <button onclick="adminLogin()">Admin Login</button>
+    <button onclick="memberLogin()">Member Login</button>
+  </div>
+
+  <script type="module">
+    import { login } from "./JS/auth.js";
+
+    window.adminLogin = () => {
+      login(email.value, password.value, "admin");
+    };
+
+    window.memberLogin = () => {
+      login(email.value, password.value, "member");
+    };
+  </script>
+
+</body>
+</html>

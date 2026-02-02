@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h2>Admin Panel</h2>
+
+  <!-- ADD MEMBER -->
+  <section>
+    <h3>Add Member</h3>
+    <input id="memberName" placeholder="Member Name">
+    <input id="memberEmail" placeholder="Member Email">
+    <select id="packageSelect">
+      <option>Monthly</option>
+      <option>Quarterly</option>
+      <option>Yearly</option>
+    </select>
+    <button id="addMember">Add Member</button>
+  </section>
+
+  <hr>
+
+  <!-- CREATE BILL -->
+  <section>
+    <h3>Create Bill</h3>
+    <input id="billEmail" placeholder="Member Email">
+    <input id="billAmount" type="number" placeholder="Amount">
+    <button id="createBill">Create Bill</button>
+  </section>
+
+  <hr>
+
+  <!-- REPORT -->
+  <section>
+    <h3>Payment Reports</h3>
+    <div id="report"></div>
+  </section>
+
+  <script type="module" src="js/admin.js"></script>
+
+</body>
+</html>
